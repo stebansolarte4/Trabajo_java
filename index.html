@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación de Tareas</title>
+    <!-- Vinculamos los estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        
+        <!-- Controles para añadir tareas -->
+        <div class="todo-form">
+            <input id="todo-title" type="text" placeholder="¿Qué necesitas hacer?" />
+            <input id="date-picker" type="date" />
+            <button onclick="addTodo()">Añadir Tarea</button>
+        </div>
+
+        <!-- Contenedor donde se mostrarán dinámicamente las tareas -->
+        <div id="todo-list"></div>
+    </div>
+
+    <!-- Vinculamos la lógica en JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
